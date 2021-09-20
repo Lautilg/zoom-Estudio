@@ -10,28 +10,83 @@
     <link rel="preload" href="css/styles.css" as="style">
     <link href="css/styles.css" rel="stylesheet">
    </head>
-   <style>
-
-h1 {text-align: center;
    
-   }
-.titulo {text-align: center;
-
+   <style>
+   
+   html {
+    font-size: 62.5%;
   }
+  
+   body {
+   font-size: 16px;  /*1rem = 10px */
+   font-family: "krub" , sans-serif;
+ }
+
+    h1 {
+    text-align: center;
+
+  
+  }
+  h1 span {
+    font-size: 12px; 
+  }  
+  .titulo {
+     text-align: center;
+     font-size: 2rem;
+    }
+    .contenedor {
+      width: 1200px;
+      margin-right: auto;
+      margin-left: auto;
+      margin-top: 2%;
+      margin-bottom: 2%; 
+    }
+  
+    .nav1 {
+      background-color: lightseagreen; 
+    display: flex;
+    justify-content: space-between;
+    }
+
+    
+    .navbg {
+      background-color: lightseagreen;
+    
+    }
+    
+    .nav1 a {
+      color: honeydew;
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: 700;
+    padding: 1rem; 
+  }
+    
+  .nav1 a:hover {
+    background-color: gray;
+  color:yellow;
+  }
+  
+  p {background-color: grey;
+    
+    }
+
    </style>
-   <body>
+  
+    <body>
     
     <header>
-        <h1>Bienvenido a mi sitio <span>Diseñador</span></h1>
+        <h1>Bienvenido a mi sitio<span> Diseñador </span></h1>
     </header>
 
-    <nav class= "navegacion-principal" >
-        <a href="#">Inicio</a>
-        <a href="#">Sobre mi</a>
-        <a href="#">Clientes</a>
-        <a href="#">Contacto</a>
-    </nav>
-    
+    <div class= "navbg" >
+       <nav class= "nav1 contenedor" >
+          <a href="#">Inicio</a>
+          <a href="#">Sobre mi</a>
+          <a href="#">Clientes</a>
+          <a href="#">Contacto</a>
+       </nav>
+    </div>
 
     <section>
         <h2 class="titulo">Diseño y desarrollo</h2>
@@ -46,7 +101,7 @@ h1 {text-align: center;
                 <line x1="15" y1="15" x2="15" y2="20" />
               </svg>
         </p>
-        <p>Buenos Aires, Argentina</p>
+        <p class="ubicacion">Buenos Aires, Argentina</p>
         <a href="#">Contactar</a>
     </section>
     
