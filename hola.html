@@ -35,7 +35,7 @@
      font-size: 2rem;
     }
     .contenedor {
-      width: 1200px;
+      max-width: 1200px;
       margin-right: auto;
       margin-left: auto;
       margin-top: 2%;
@@ -45,18 +45,36 @@
     .nav1 {
       background-color: lightseagreen; 
     display: flex;
-    justify-content: space-between;
+  align-items: center;
     flex-direction: column; 
 
     }
-    @media (min-width: 768px) {
-      .nav1 {
-        flex-direction: row;
+    @media (min-width: 480px){
+      .nav {
+        display: block;
+        text-align: center;
+
       }
     }
 
+     
+    @media (min-width: 768px) {
+      .nav1 {
+        flex-direction: row;
+        justify-content: space-between;
+      }
+    }
+@media (min-width: 1140px) {
 
-    .navbg {
+
+}
+
+@media (min-width: 1400px){
+
+
+}
+  
+.navbg {
       background-color: lightseagreen;
     
     }
@@ -74,15 +92,22 @@
   color:yellow;
   }
   
-  p {background-color: grey;
+  p {background-color:;
     
     }
 
     @media (min-width: 480px ) {
-     h1 {
+     
+       
      
         } 
+  
+    
+  .hero {
+    background-image: url(hero.jpg);
   }
+
+
 
 
     </style>
@@ -102,8 +127,9 @@
        </nav>
     </div>
 
-    <section>
-        <h2 class="titulo">Diseño y desarrollo</h2>
+    <section class="hero">
+      <div class="contenidohero"  
+      <h2 class="titulo">Diseño y desarrollo</h2>
         
         <p>
             <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-map-2" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffec00" fill="none" stroke-linecap="round" stroke-linejoin="round">
