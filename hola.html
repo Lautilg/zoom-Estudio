@@ -15,6 +15,10 @@
    
    html {
     font-size: 62.5%;
+    box-sizing: border-box;
+  }
+   *, *:before, *:after {
+   box-sizing: inherit;
   }
   
    body {
@@ -24,16 +28,33 @@
 
     h1 {
     text-align: center;
-
-  
-  }
+    font-size: 3.8rem;
+   }
   h1 span {
     font-size: 12px; 
-  }  
-  .titulo {
+  }
+  
+  h2     {
+ font-size: 2.8rem;
+
+  }
+
+ h3   {
+   font-size: 1.8rem;
+
+ }
+
+  .titulo, .navbg {
      text-align: center;
-     font-size: 2rem;
+     font-size: 4rem;
     }
+
+    .titulo span {
+      font-size: 15px;
+     
+
+    }
+    
     .contenedor {
       max-width: 1200px;
       margin-right: auto;
@@ -42,6 +63,27 @@
       margin-bottom: 2%; 
     }
   
+    .boton {
+      background-color: lightseagreen;
+      color: white;
+      padding: 1rem 3rem 1rem 3rem;
+      margin-top: 1rem;
+      font-size: 2rem;
+      text-decoration: none;
+      text-transform: uppercase;
+      border-radius: .5rem;
+      font-weight: bold;
+      width: 40%;
+      text-align: center;
+  
+    }
+    @media (min-width: 768px) {
+      .boton {
+        width: auto;
+        
+      }
+    }
+
     .nav1 {
       background-color: lightseagreen; 
     display: flex;
@@ -64,15 +106,15 @@
         justify-content: space-between;
       }
     }
-@media (min-width: 1140px) {
+    @media (min-width: 1140px) {
 
 
-}
+    }
 
-@media (min-width: 1400px){
+    @media (min-width: 1400px){
 
 
-}
+    }
   
 .navbg {
       background-color: lightseagreen;
@@ -89,23 +131,41 @@
     
   .nav1 a:hover {
     background-color: gray;
-  color:yellow;
+  color: yellow;
   }
   
-  p {background-color:;
+  p {background-color: rgb(0 0 0 / 0%)
     
-    }
-
-    @media (min-width: 480px ) {
-     
-       
-     
-        } 
+  }
   
     
   .hero {
     background-image: url(hero.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 450px;
+    padding: 20px;
+    
+    position: relative;
   }
+ .contenidohero {
+    position: absolute;
+    background-color: rgb( 0 0 0 / 70%); /** Anterior **/ 
+    bottom: 0%;
+    left: 0%;
+    top: 0%;
+    right: 0%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+   }
+
+   .contenidohero h2,
+   .contenidohero p {
+     color: white;
+   }
 
 
 
@@ -128,8 +188,10 @@
     </div>
 
     <section class="hero">
-      <div class="contenidohero"  
-      <h2 class="titulo">Diseño y desarrollo</h2>
+      
+      <div class="contenidohero">
+    
+      <h2 class="titulo">Diseño y desarrollo<span> freelancer </span></h2>
         
         <p>
             <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-map-2" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffec00" fill="none" stroke-linecap="round" stroke-linejoin="round">
@@ -142,9 +204,9 @@
               </svg>
         </p>
         <p class="ubicacion">Buenos Aires, Argentina</p>
-        <a href="#">Contactar</a>
+        <a class="boton" href="#">Contactar</a>
     </section>
-    
+    </div>
     
     <main>
       <h2 class="titulo2">Mis servicios</h2>
