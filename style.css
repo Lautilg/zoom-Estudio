@@ -4,6 +4,8 @@
     --Principal: #ffec00;
     --secundario: #009988;
     --Tercero: #9e9e9e;
+    --Cuarto: #dfe9f3;
+
 }
 
  
@@ -24,12 +26,8 @@
       body {
        font-size: 16px;  /*1rem = 10px */
        font-family: "krub" , sans-serif;
-     }
-    
-        h1 {
-        text-align: center;
-        font-size: 3.8rem;
-       }
+      background-image: linear-gradient(to top, var(--Cuarto) 0%, var(--blanco) 20%)
+      }
       h1 span {
         font-size: 12px; 
       }
@@ -60,9 +58,9 @@
         }
         
         .contenedor {
-          max-width: 1200px;
-          margin-right: auto;
+          max-width: 700px;
           margin-left: auto;
+          margin-right: auto;
           margin-top: 2%;
           margin-bottom: 2%; 
         }
@@ -87,7 +85,7 @@
          font-family: sans-serif;
         }
     
-    
+    /* media quare */
         @media (min-width: 768px) {
           .boton {
             width: auto;
