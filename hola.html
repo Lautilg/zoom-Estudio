@@ -8,184 +8,11 @@
     <link rel="preload" href="zoom/normalize.css" as="style">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="preload" href="zoom/style.css" as="style">
-    <link href="zoom/styles.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
    </head>
    
    <style>
    
-    /* Globales */
-   html {
-    font-size: 62.5%;
-    box-sizing: border-box;  /* Hack para box model **/
-  }
-   *, *:before, *:after {
-   box-sizing: inherit;
-  }
-  
-
-  /* Tipografia */
-   
-  
-  
-  body {
-   font-size: 16px;  /*1rem = 10px */
-   font-family: "krub" , sans-serif;
- }
-
-    h1 {
-    text-align: center;
-    font-size: 3.8rem;
-   }
-  h1 span {
-    font-size: 12px; 
-  }
-  
-  h2     {
- font-size: 2.8rem;
-
-  }
-
- h3   {
-   font-size: 1.8rem;
-  text-align: center;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
- }
-
- 
-  /* Titulos */
- 
-  .titulo, .navbg {
-     text-align: center;
-     font-size: 4rem;
-    }
-
-    .titulo span {
-      font-size: 15px;
-     
-
-    }
-    
-    .contenedor {
-      max-width: 1200px;
-      margin-right: auto;
-      margin-left: auto;
-      margin-top: 2%;
-      margin-bottom: 2%; 
-    }
-  
-    .boton {
-      background-color: lightseagreen;
-      color: white;
-      padding: 1rem 3rem 1rem 3rem;
-      margin-top: 1rem;
-      font-size: 2rem;
-      text-decoration: none;
-      text-transform: uppercase;
-      border-radius: .5rem;
-      font-weight: bold;
-      width: 40%;
-      text-align: center;
-  
-    }
-
-    .titulo2  {
-     text-align: center;
-     font-family: sans-serif;
-    }
-
-
-    @media (min-width: 768px) {
-      .boton {
-        width: auto;
-        
-      }
-    }
-
-    .nav1 {
-      background-color: lightseagreen; 
-    display: flex;
-  align-items: center;
-    flex-direction: column; 
-
-    }
-    @media (min-width: 480px){
-      .nav {
-        display: block;
-        text-align: center;
-
-      }
-    }
-
-     
-    @media (min-width: 768px) {
-      .nav1 {
-        flex-direction: row;
-        justify-content: space-between;
-      }
-    }
-   
-   
-    @media (min-width: 1140px) {
-
-
-    }
-
-    @media (min-width: 1400px){
-
-
-    }
-  
-.navbg {
-      background-color: lightseagreen;
-    
-    }
-    
-    .nav1 a {
-      color: honeydew;
-    text-decoration: none;
-    font-size: 2rem;
-    font-weight: 700;
-    padding: 1rem; 
-  }
-    
-  .nav1 a:hover {
-    background-color: gray;
-  color: yellow;
-  }
-  
-  p {background-color: rgb(0 0 0 / 0%)
-    
-  }
-  
-    
-  .hero {
-    background-image: url(hero.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 450px;
-    padding: 20px;
-    
-    position: relative;
-  }
- .contenidohero {
-    position: absolute;
-    background-color: rgb( 0 0 0 / 70%); /** Anterior **/ 
-    bottom: 0%;
-    left: 0%;
-    top: 0%;
-    right: 0%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-
-   }
-
-   .contenidohero h2,
-   .contenidohero p {
-     color: white;
-   }
-
 
 
 
@@ -196,16 +23,16 @@
     <header>
         <h1>Bienvenido a mi sitio<span> Diseñador </span></h1>
     </header>
-
+   <!--
     <div class= "navbg" >
-       <nav class= "nav1 contenedor" >
-          <a href="#">Inicio</a>
-          <a href="#">Sobre mi</a>
-          <a href="#">Clientes</a>
-          <a href="#">Contacto</a>
-       </nav>
-    </div> <!-- navbg-->
-
+      <nav class= "nav1 contenedor" >
+         <a href="#">Inicio</a>
+         <a href="#">Sobre mi</a>
+         <a href="#">Clientes</a>
+         <a href="#">Contacto</a>
+      </nav>
+   </div> 
+      -->
     <section class="hero">
       
       <div class="contenidohero">
@@ -340,7 +167,7 @@
     
 <footer>
     <p>todos los derechos reservados. Lautaro Griguelo</p>
-</footer>
+</footer> <!-- Pie de pagina-->
  
                    
 </body>
