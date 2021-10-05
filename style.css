@@ -193,14 +193,32 @@
        .contenidohero p {
          color: white;
        }
-    
+       /** Formulario**/
        .contacto{
-       max-width: 700px;
-       margin-left: auto;
-       margin-right: auto;
-       margin-top: 2%;
-       margin-bottom: 2%; 
+        max-width: 700px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 2%;
+        margin-bottom: 2%; 
+        background-color: var(--Tercero); 
+        border-radius: 3rem;
+        padding: 3rem;
+      /**margin: 0 auto;**/
+      
+    
        }
+
+       .tituloh2{
+         text-align: center;
+
+
+
+       }
+
+      .contacto fieldset{
+      border: none;
+      text-align: center;
+    }
 
        /** Servicios **/
        .servicios{
@@ -219,11 +237,12 @@
       
       .servicio h3 {
       color: var(--Secundario)
-
+      
       }
 
       .servicio p {
         line-height: 2;
+      text-align: center;
       }
       
       
@@ -237,5 +256,5 @@
       align-items: center;
       justify-content: space-evenly;
 
-
     }
+
