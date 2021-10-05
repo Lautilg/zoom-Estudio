@@ -95,7 +95,7 @@
           text-align: center;
       
         }
-    
+         
         .titulo2  {
          text-align: center;
          font-family: sans-serif;
@@ -218,7 +218,22 @@
       .contacto fieldset{
       border: none;
       text-align: center;
-    }
+      font-size: 1.8rem;
+     font-weight: 900px;
+     
+     }
+
+
+     .contacto legend {
+
+      text-align: center;
+      font-size: 1.8rem;
+      font-weight: 600;
+      margin-bottom: 1rem;
+      padding: 4%;
+      text-transform: uppercase;
+
+     }
 
        /** Servicios **/
        .servicios{
@@ -258,3 +273,29 @@
 
     }
 
+    .contenedor-campos {
+
+   
+    }
+
+    .campo {
+    margin-bottom: 2rem;
+
+    }
+    .campo label {
+    color: var(--Obscuro); 
+    
+    font-weight: bold;
+    margin-bottom: .5rem;
+    display: block;
+
+    }
+   /**[type="text"]**/
+    .campo input{
+    width: 100%;
+     border: none;
+    padding: 1.5rem;
+    }
+   /**.input-text {
+    border: none;
+   }**/
