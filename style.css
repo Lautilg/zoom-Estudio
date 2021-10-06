@@ -110,10 +110,10 @@
         }
     
         .nav1 {
-          background-color: lightseagreen; 
-        display: flex;
-      align-items: center;
-        flex-direction: column; 
+         background-color: lightseagreen; 
+         display: flex;
+         align-items: center;
+         flex-direction: column; 
     
         }
         @media (min-width: 480px){
@@ -124,8 +124,8 @@
           }
         }
     
-         
         @media (min-width: 768px) {
+          .w-100
           .nav1 {
             flex-direction: row;
             justify-content: space-between;
@@ -234,6 +234,12 @@
       text-transform: uppercase;
 
      }
+      /** Utilidades **/
+      .w-100 {
+     width: 100%;
+
+      }
+
 
        /** Servicios **/
        .servicios{
@@ -274,7 +280,7 @@
     }
 
     .contenedor-campos {
-
+      
    
     }
 
@@ -299,3 +305,45 @@
    /**.input-text {
     border: none;
    }**/
+
+   .mainmenubtn {
+    background-color: skyblue;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding:20px;
+    margin-top:20px;
+    border-radius: 0.5rem;
+}
+.mainmenubtn:hover {
+    background-color: blue;
+    }
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+.dropdown-child {
+    display: none;
+    background-color: skyblue;
+    min-width: 200px;
+}
+.dropdown-child a {
+    color: yellow;
+    padding: 20px;
+    text-decoration: none;
+    display: block;
+}
+.dropdown:hover .dropdown-child {
+    display: block;
+}
+
+footer {
+  text-align: center;
+}
+
+
+.enviar .boton {
+justify-content: flex-end;
+
+
+}
