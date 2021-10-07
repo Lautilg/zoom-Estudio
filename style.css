@@ -113,9 +113,9 @@
           text-transform: uppercase;
           border-radius: .5rem;
           font-weight: bold;
-          width: 30%;
+          width: 50%;
           text-align: center;
-          align-items: flex-end;
+          align-items: center;
         }
          
         .titulo2  {
@@ -185,7 +185,7 @@
     
         }
       
-    .navbg {
+      .navbg {
           background-color: lightseagreen;
         
         }
